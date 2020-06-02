@@ -8,6 +8,18 @@
   font-size: 1.2rem;
 }
 
+.Cup {
+  width: 50%;
+  height: 70%;
+  border: 6px solid black;
+  border-top: 2px solid transparent;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 2% auto;
+  background-color: burlywood;
+}
+
 @media (min-width: 500px) and (max-height: 401px) {
   .Boba {
     width: 350px;

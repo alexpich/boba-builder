@@ -9,7 +9,11 @@ class BobaIngredient extends Component {
 
     switch (this.props.type) {
       case "cup":
-        ingredient = <div className={classes.Cup}></div>;
+        ingredient = (
+          <div className={classes.Cup}>
+            {/* <div className={classes.MilkTea}></div> */}
+          </div>
+        );
         break;
       case "aloe-vera":
         ingredient = <div className={classes.AloeVera}></div>;
