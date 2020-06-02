@@ -27,7 +27,6 @@ class BobaIngredient extends Component {
         ingredient = <div className={classes.MilkTea}></div>;
         break;
       default:
-        ``;
         ingredient = null;
     }
 
