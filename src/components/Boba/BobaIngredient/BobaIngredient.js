@@ -15,19 +15,19 @@ class BobaIngredient extends Component {
           </div>
         );
         break;
-      case "aloe-vera":
+      case "aloeVera":
         ingredient = <div className={classes.AloeVera}></div>;
         break;
-      case "boba-pearl":
+      case "bobaPearl":
         ingredient = <div className={classes.BobaPearl}></div>;
         break;
-      case "egg-pudding":
+      case "eggPudding":
         ingredient = <div className={classes.EggPudding}></div>;
         break;
-      case "grass-jelly":
+      case "grassJelly":
         ingredient = <div className={classes.GrassJelly}></div>;
         break;
-      case "milk-tea":
+      case "milkTea":
         ingredient = <div className={classes.MilkTea}></div>;
         break;
       default:
