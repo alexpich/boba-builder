@@ -18,8 +18,8 @@ class BobaIngredient extends Component {
       case "aloe-vera":
         ingredient = <div className={classes.AloeVera}></div>;
         break;
-      case "boba":
-        ingredient = <div className={classes.Boba}></div>;
+      case "boba-pearl":
+        ingredient = <div className={classes.BobaPearl}></div>;
         break;
       case "egg-pudding":
         ingredient = <div className={classes.EggPudding}></div>;

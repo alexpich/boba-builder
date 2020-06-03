@@ -7,10 +7,8 @@ const boba = (props) => {
   return (
     <div className={classes.Boba}>
       <div className={classes.Cup}>
-        {/* <BobaIngredient type={"cup"} /> */}
-        <BobaIngredient type={"boba"} />
+        <BobaIngredient type={"boba-pearl"} />
         <BobaIngredient type={"egg-pudding"} />
-        {/* <BobaIngredient type={"milk-tea"} /> */}
       </div>
     </div>
   );
