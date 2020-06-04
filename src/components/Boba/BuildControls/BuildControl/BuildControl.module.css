@@ -49,11 +49,13 @@
 .BuildControl .Less:hover,
 .BuildControl .Less:active {
   background-color: #feb2b2;
+  border: 1px solid #feb2b2;
   color: white;
 }
 
 .BuildControl .More:hover,
 .BuildControl .More:active {
   background-color: #9ae6b4;
+  border: 1px solid #9ae6b4;
   color: white;
 }
