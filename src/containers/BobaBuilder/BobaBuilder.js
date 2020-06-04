@@ -6,8 +6,8 @@ import Boba from "../../components/Boba/Boba";
 class BobaBuilder extends Component {
   state = {
     ingredients: {
-      bobaPearl: 1,
-      eggPudding: 1,
+      bobaPearl: 0,
+      eggPudding: 0,
     },
   };
 
