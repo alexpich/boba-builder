@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Aux from "../../hoc/Aux";
 import Boba from "../../components/Boba/Boba";
+import BuildControls from "../../components/Boba/BuildControls/BuildControls";
 
 class BobaBuilder extends Component {
   state = {
@@ -15,7 +16,7 @@ class BobaBuilder extends Component {
     return (
       <Aux>
         <Boba ingredients={this.state.ingredients} />
-        <div>Build Controls</div>
+        <BuildControls />
       </Aux>
     );
   }
