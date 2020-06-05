@@ -17,7 +17,7 @@ class BobaBuilder extends Component {
       bobaPearl: 0,
       eggPudding: 0,
     },
-    totalPrice: 9,
+    totalPrice: 4,
     purchasable: false,
     purchasing: false,
   };
@@ -72,6 +72,10 @@ class BobaBuilder extends Component {
     this.setState({ purchasing: false });
   };
 
+  purchaseContinueHandler = () => {
+    alert("Continued");
+  };
+
   render() {
     const disabledInfo = {
       ...this.state.ingredients,
@@ -86,16 +90,21 @@ class BobaBuilder extends Component {
           show={this.state.purchasing}
           modalClosed={this.purchaseCancelHandler}
         >
-          <OrderSummary ingredients={this.state.ingredients} />
+          <OrderSummary
+            ingredients={this.state.ingredients}
+            price={this.state.totalPrice}
+            purchaseCancelled={this.purchaseCancelHandler}
+            purchaseContinued={this.purchaseContinueHandler}
+          />
         </Modal>
         <Boba ingredients={this.state.ingredients} />
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
           ingredientRemoved={this.removeIngredientHandler}
           disabled={disabledInfo}
+          ordered={this.purchaseHandler}
           price={this.state.totalPrice}
           purchasable={this.state.purchasable}
-          ordered={this.purchaseHandler}
         />
       </Aux>
     );
