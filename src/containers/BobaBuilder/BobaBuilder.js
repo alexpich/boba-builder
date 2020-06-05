@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Aux from "../../hoc/Aux";
 import Boba from "../../components/Boba/Boba";
 import BuildControls from "../../components/Boba/BuildControls/BuildControls";
+import Modal from "../../components/UI/Modal/Modal";
+import OrderSummary from "../../components/Boba/OrderSummary/OrderSummary";
 
 const INGREDIENT_PRICES = {
   bobaPearl: 0.6,
@@ -71,6 +73,9 @@ class BobaBuilder extends Component {
 
     return (
       <Aux>
+        <Modal>
+          <OrderSummary ingredients={this.state.ingredients} />
+        </Modal>
         <Boba ingredients={this.state.ingredients} />
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
