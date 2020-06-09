@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Aux from "../../hoc/Aux";
+import Aux from "../../hoc/Aux/Aux";
 import Boba from "../../components/Boba/Boba";
 import BuildControls from "../../components/Boba/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
