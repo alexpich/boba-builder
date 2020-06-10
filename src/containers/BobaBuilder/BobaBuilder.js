@@ -5,6 +5,7 @@ import Boba from "../../components/Boba/Boba";
 import BuildControls from "../../components/Boba/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Boba/OrderSummary/OrderSummary";
+import axios from "../../axios-orders";
 
 const INGREDIENT_PRICES = {
   bobaPearl: 0.6,
@@ -73,7 +74,25 @@ class BobaBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
-    alert("Continued");
+    const order = {
+      ingredients: this.state.ingredients,
+      price: this.state.totalPrice,
+      customer: {
+        name: "Alex P",
+        address: {
+          street: "123 Candy Cane Lane",
+          zipCode: "90210",
+          country: "USA",
+        },
+        email: "alex@email.com",
+      },
+    };
+    axios
+      .post("/orders.json", order)
+      .then((response) => console.log(response))
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   render() {
